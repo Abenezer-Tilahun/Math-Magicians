@@ -13,7 +13,7 @@ class Calculator extends React.Component {
         <div className="btn btn-ac">AC</div>
         <div className="btn btn-negative">+/-</div>
         <div className="btn btn-percent">%</div>
-        <div className="btn btn-divid btn-operation">/</div>
+        <div className="btn btn-divid btn-operation">÷</div>
         <div className="btn btn-7">7</div>
         <div className="btn btn-8">8</div>
         <div className="btn btn-9">9</div>

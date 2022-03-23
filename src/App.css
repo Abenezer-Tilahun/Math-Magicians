@@ -1,11 +1,11 @@
 .calculator-wrapper {
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  gap: 0.1rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.2rem;
 }
 
 .result-section {
-  grid-column: 16 span;
+  grid-column: 4 span;
   background-color: gray;
   color: white;
   padding: 1rem;
@@ -19,14 +19,11 @@
   padding: 2rem;
   background-color: #ddd;
   cursor: pointer;
+  border: none;
 }
 
 .calculator-wrapper .btn:hover {
   background-color: #eee;
-}
-
-.btn-operation {
-  grid-column: 4 span;
 }
 
 .calculator-wrapper .btn-operation {
@@ -38,31 +35,5 @@
 }
 
 .btn-0 {
-  grid-column: 8 span;
-}
-
-.btn-decimal,
-.btn-add,
-.btn-minus,
-.btn-multiply,
-.btn-divid {
-  grid-column: 4 span;
-}
-
-.btn-1,
-.btn-2,
-.btn-3,
-.btn-4,
-.btn-5,
-.btn-6,
-.btn-7,
-.btn-8,
-.btn-9 {
-  grid-column: 4 span;
-}
-
-.btn-ac,
-.btn-negative,
-.btn-percent {
-  grid-column: 4 span;
+  grid-column: 2 span;
 }

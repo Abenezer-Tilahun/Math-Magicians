@@ -1,59 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 import Button from './Button';
 
-class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      calcObj: {
-        total: null,
-        next: null,
-        operation: null,
-      },
-    };
-    this.onClick = this.onClick.bind(this);
-  }
+function Calculator() {
+  const [calcObj, setCalcObj] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
-  onClick(buttonName) {
-    const { calcObj } = this.state;
-    const newCalcObj = { ...calcObj, ...calculate(calcObj, buttonName) };
-    this.setState({
-      calcObj: newCalcObj,
-    });
-  }
+  const onClick = (buttonName) => {
+    setCalcObj({ ...calcObj, ...calculate(calcObj, buttonName) });
+  };
 
-  render() {
-    const { calcObj } = this.state;
-    const result = calcObj.next || calcObj.total;
-    return (
+  const result = calcObj.next || calcObj.total;
 
-      <div className="calculator-wrapper">
-        <div className="result-section">
-          {Number(result)}
-        </div>
-        <Button value="AC" onClick={this.onClick} />
-        <Button value="+/-" onClick={this.onClick} />
-        <Button value="%" onClick={this.onClick} />
-        <Button value="÷" onClick={this.onClick} />
-        <Button value="7" onClick={this.onClick} />
-        <Button value="8" onClick={this.onClick} />
-        <Button value="9" onClick={this.onClick} />
-        <Button value="x" onClick={this.onClick} />
-        <Button value="4" onClick={this.onClick} />
-        <Button value="5" onClick={this.onClick} />
-        <Button value="6" onClick={this.onClick} />
-        <Button value="-" onClick={this.onClick} />
-        <Button value="1" onClick={this.onClick} />
-        <Button value="2" onClick={this.onClick} />
-        <Button value="3" onClick={this.onClick} />
-        <Button value="+" onClick={this.onClick} />
-        <Button value="0" onClick={this.onClick} />
-        <Button value="." onClick={this.onClick} />
-        <Button value="=" onClick={this.onClick} />
+  const buttonsTitles = [
+    'AC', '+/-', '%', '÷',
+    '7', '8', '9', 'x',
+    '4', '5', '6', '-',
+    '1', '2', '3', '+',
+    '0', '.', '=',
+  ];
+  return (
+    <div className="calculator-wrapper">
+      <div className="result-section">
+        {Number(result)}
       </div>
-    );
-  }
+      {
+        buttonsTitles.map((btnTitle) => (
+          <Button value={btnTitle} onClick={onClick} key={btnTitle} />
+        ))
+      }
+    </div>
+  );
 }
 
 export default Calculator;

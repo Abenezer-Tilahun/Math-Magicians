@@ -1,0 +1,15 @@
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f5f5dc;
+  }
+  
+  footer p {
+    color: blueviolet;
+  }
+  
+  footer a {
+    color: blueviolet;
+    margin-inline: 0.25rem;
+  }
+  

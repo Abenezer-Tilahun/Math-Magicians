@@ -1,0 +1,50 @@
+header {
+  background-color: #7fffd4;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding-inline: 1rem;
+}
+
+header .branding {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-left: -145px;
+  text-decoration: wavy;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
+
+header nav a {
+  display: inline-block;
+  padding: 2rem 0.5rem;
+  color: black;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+header nav a:hover {
+  background-color: #fff1;
+}
+
+@media (min-width: 768px) {
+  header .branding {
+    font-size: 2rem;
+  }
+
+  header nav a {
+    font-size: 1.25rem;
+  }
+}

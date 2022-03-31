@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import calculate from '../logic/calculate';
 import Button from './Button';
+import './Calculator.css';
 
 function Calculator() {
   const [calcObj, setCalcObj] = useState({
@@ -41,16 +42,26 @@ function Calculator() {
     '0', '.', '=',
   ];
   return (
-    <div className="calculator-wrapper">
-      <div className="result-section">
-        {Number(result)}
-        <div className="math">{math}</div>
+    <div className="calculator-tab-wrapper">
+      <div className="calculator-info">
+        <h2>
+          Let&apos;s do some math!
+        </h2>
+        <p>
+          Use this calculator to do basic Math operation.
+        </p>
       </div>
-      {
-        buttonsTitles.map((btnTitle) => (
-          <Button value={btnTitle} onClick={onClick} key={btnTitle} />
-        ))
-      }
+      <div className="calculator-wrapper">
+        <div className="result-section">
+          {Number(result)}
+          <div className="math">{math}</div>
+        </div>
+        {
+          buttonsTitles.map((btnTitle) => (
+            <Button value={btnTitle} onClick={onClick} key={btnTitle} />
+          ))
+        }
+      </div>
     </div>
   );
 }

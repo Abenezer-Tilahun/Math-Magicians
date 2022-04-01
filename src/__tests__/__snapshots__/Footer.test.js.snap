@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly 1`] = `
+<footer>
+  <p>
+    This is a Math-Magicians Software Designed By Abenezer-Tilahun 
+  </p>
+  <a
+    href="https://github.com/Abenezer-Tilahun/Math-Magicians.git"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Copyright @2022
+  </a>
+  .
+</footer>
+`;

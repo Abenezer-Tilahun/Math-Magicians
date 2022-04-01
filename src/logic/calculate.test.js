@@ -1,4 +1,5 @@
 import calculate from './calculate';
+
 describe('AC button', () => {
   test('AC button with no previous input', () => {
     const obj = {

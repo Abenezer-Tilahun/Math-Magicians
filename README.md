@@ -2,7 +2,9 @@
 
 "Mathematician" is a web app for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote.
 
-![screenshot](./Images/Screen-shoot-4.PNG)
+![screenshot](./Images/Screen-shoot1.PNG)
+![screenshot](./Images/Screen-shoot2.PNG)
+![screenshot](./Images/Screen-shoot3.PNG)
 
 Our goal here is to Build a single page web application for mathematics webs using the React library 
 Click [here](https://abenezer-tilahun.github.io/Math-Magicians/) to get a live preview of the project

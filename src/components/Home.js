@@ -1,8 +1,9 @@
 import React from 'react';
+import './Home.css';
 
 export default function Home() {
   return (
-    <>
+    <div className="home">
       <h2>Are you a math magician?</h2>
       <p>
         Well! You might or might not be the one! But here you can do basic
@@ -20,6 +21,6 @@ export default function Home() {
         <a href="https://github.com/Abenezer-Tilahun/Math-Magicians"> GitHub</a>
         .
       </p>
-    </>
+    </div>
   );
 }

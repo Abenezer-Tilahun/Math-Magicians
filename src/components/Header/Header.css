@@ -1,12 +1,12 @@
 header {
-  background-color: #7fffd4;
+  background-color: #f5f5dc;
 }
 
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: black;
+  color: #daa520;
   padding-inline: 1rem;
 }
 
@@ -30,7 +30,7 @@ header nav ul {
 header nav a {
   display: inline-block;
   padding: 2rem 0.5rem;
-  color: black;
+  color: #0c6;
   text-decoration: none;
   font-size: 1.25rem;
 }

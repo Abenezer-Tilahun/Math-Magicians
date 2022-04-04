@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://abenezer-tilahun.github.io/Math-Magicians",
+  "homepage": "https://abenezer-tilahun.github.io/Math-Magicians/",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.16.2",
@@ -50,7 +50,6 @@
     "@babel/preset-react": "^7.16.7",
     "@testing-library/dom": "^8.12.0",
     "@testing-library/react": "^13.0.0",
-    "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
